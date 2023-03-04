@@ -6,7 +6,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-// - GET => Buscar informação no back-end
+// - GET => Buscar informação no back
 
 const users = []
 
