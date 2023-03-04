@@ -1,16 +1,16 @@
-const { request, response } = require('express')
 const express = require('express')
 const uuid = require('uuid') // biblioteca que cria vários id diferentes (npm i uuid)
-const port = 3000
+const cors = require('cors')
+const port = 3001
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 // - GET => Buscar informação no back-end
 
 const users = []
 
 // Middlewares -> é um interceptador, tem o poder de parar completamente ou aterar um dado.
-
 // é uma função
 
 const checkUserId = (request, response, next) => {
